@@ -11,7 +11,7 @@ export default class Sketch {
       0.01,
       1000
     );
-    this.camera.position.z = 1;
+    this.camera.position.z = 5;
     this.scene = new THREE.Scene();
     this.time = 0;
     this.addMesh();
@@ -27,6 +27,8 @@ export default class Sketch {
 
   render() {
     this.time++;
+    this.mesh.rotation.y += 0.02;
+    this.mesh.rotation.z += 0.02;
     this.renderer.render(this.scene, this.camera);
     window.requestAnimationFrame(this.render.bind(this));
   }
