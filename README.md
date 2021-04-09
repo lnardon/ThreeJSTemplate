@@ -1,6 +1,6 @@
 # Basic Three.js Template
 
-This is a basic stater pack template for vanilla web development with Three.js.
+This is a basic starter pack template for vanilla web development with Three.js.
 
 ## Installation
 
